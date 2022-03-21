@@ -41,6 +41,25 @@ radio.onReceivedValue(function (name, value) {
             . # . . .
             `)
         }
+radio.sendValue("lithium", value)
+    } else if (name = "lithium") {
+        for (value; value--;) {
+            basic.showLeds(`
+            #####
+            #####
+            ..#..
+            ..#..
+            ..#..
+            `)
+            basic.showLeds(`
+            ##...
+            ##...
+            #####
+            ##...
+            ##...
+            `)
+        }
+basic.showString("" + (`${value} Mobile Phones`))
     }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
